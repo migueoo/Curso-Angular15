@@ -1,9 +1,8 @@
- <h1>{{title}}</h1>
-
- <img [src]="imgUrl">
-
- <button (click)="chamarFuncao()">Chamar Evento</button>
-
- <input [(ngModel)]="title">
+ <h1 *ngIf="title, else mensagemPadrao">{{title}}</h1>
+ 
+ <ng-template #mensagemPadrao> 
+  <h1>Bem vindo</h1>
+ </ng-template>
+ 
 
  <router-outlet></router-outlet>
