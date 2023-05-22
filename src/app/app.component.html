@@ -1,5 +1,9 @@
-
-
  <h1>{{title}}</h1>
- <button (click) = "mudarTexto()">Mudar Texto</button>
-<router-outlet></router-outlet>
+
+ <img [src]="imgUrl">
+
+ <button (click)="chamarFuncao()">Chamar Evento</button>
+
+ <input [(ngModel)]="title">
+
+ <router-outlet></router-outlet>
